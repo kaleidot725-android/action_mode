@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".MainFragment"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="GOOD" />
+        <Button
+            android:id="@+id/primary_action_mode_activity_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRIMARY ACTION MODE (ACTIVITY)"/>
 
-</FrameLayout>
+        <Button
+            android:id="@+id/primary_action_mode_view_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRIMARY ACTION MODE (VIEW)"/>
+
+        <Button
+            android:id="@+id/floating_action_mode_activity_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLOATING ACTION MODE (ACTIVITY)"/>
+
+        <Button
+            android:id="@+id/floating_action_mode_view_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLOATING ACTION MODE (VIEW)"/>
+</LinearLayout>
